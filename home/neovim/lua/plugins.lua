@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
 	    end,
     }
     use('folke/tokyonight.nvim')
-
+    use('nvim-lualine/lualine.nvim')
     if packer_bootstrap then
         require("packer").sync()
     end
