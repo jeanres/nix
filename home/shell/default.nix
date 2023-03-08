@@ -3,6 +3,8 @@
 {
   programs.zsh = {
     enable = true;
+    autocd = true;
+    enableSyntaxHighlighting = true;
     shellAliases = {
       vi = "nvim";
       vim = "nvim";
@@ -12,6 +14,9 @@
 
   programs.tmux = {
     enable = true;
+    prefix = "C-Space";
+    escapeTime = 0;
+    baseIndex = 1;
   };
 
   programs.git = {
