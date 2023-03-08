@@ -33,7 +33,7 @@
             ];
 
           };
-    	"MacBook-Pro" = darwin.lib.darwinSystem {
+    	"JeanresPersonal" = darwin.lib.darwinSystem {
           system = "aarch64-darwin";
           modules = [
               ./hosts/MacBook-Pro
