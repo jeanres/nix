@@ -20,3 +20,5 @@ $ /System/Library/Filesystems/apfs.fs/Contents/Resources/apfs.util -t # For Big 
 
 ./result/sw/bin/darwin-rebuild switch --flake ~/.config/darwin
 
+
+darwin-rebuild switch --flake .
