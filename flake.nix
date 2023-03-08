@@ -21,7 +21,7 @@
  	            home-manager.darwinModules.home-manager {
                     home-manager.useGlobalPkgs = true;
                     home-manager.useUserPackages = true;
-                    home-manager.users."jeanres.wanepoel" = { pkgs, ... }: {
+                    home-manager.users."jeanre.swanepoel" = { pkgs, ... }: {
                         imports = [
 		                    ./home/shell
 		                    ./home/neovim
