@@ -18,10 +18,5 @@ vim.opt.termguicolors = true
 
 vim.g.mapleader = " "
 
-vim.api.nvim_create_autocmd({"BufWritePre"}, {
-    pattern = "*",
-    command = "%s/\\s\\+$//e",
-})
-
 vim.cmd[[colorscheme tokyonight-night]]
 

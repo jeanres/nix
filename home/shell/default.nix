@@ -1,6 +1,8 @@
 { pkgs, inputs, system, ... }:
 
 {
+  home.packages = with pkgs; [ ripgrep ];
+
   programs.zsh = {
     enable = true;
     autocd = true;
@@ -11,6 +13,8 @@
       vimdiff = "nvim -d";
     };
   };
+
+  programs.fzf.enable = true;
 
   programs.tmux = {
     enable = true;

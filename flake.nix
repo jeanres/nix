@@ -13,7 +13,7 @@
 
     outputs = { self, darwin, nixpkgs, home-manager }: {
         darwinConfigurations = {
-            "JeanreWnderLabz"  = darwin.lib.darwinSystem {
+            "JeanresnderLabz"  = darwin.lib.darwinSystem {
                 system = "aarch64-darwin";
                 modules = [
                     ./hosts/darwin

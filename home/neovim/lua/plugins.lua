@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
     }
     use('folke/tokyonight.nvim')
     use('nvim-lualine/lualine.nvim')
+    use('github/copilot.vim')
     if packer_bootstrap then
         require("packer").sync()
     end
