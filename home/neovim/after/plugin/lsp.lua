@@ -1,9 +1,4 @@
 local config = require('lspconfig')
-local keymap = require('keymap')
-
-keymap.nnoremap('[d', vim.diagnostic.goto_prev, {silent=true})
-keymap.nnoremap(']d', vim.diagnostic.goto_next, {silent=true})
-keymap.nnoremap('<leader>d', vim.diagnostic.open_float, {silent=true})
 
 local organize_imports = function (client, timeout_ms)
     if not client.server_capabilities.codeActionProvider then
@@ -73,4 +68,8 @@ config["hls"].setup({
 
 config["tsserver"].setup({
     on_attach = on_attach,
+})
+
+config["jdtls"].setup({
+  on_attach = on_attach,
 })
