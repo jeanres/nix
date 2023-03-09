@@ -19,6 +19,15 @@ return require('packer').startup(function(use)
     use('folke/tokyonight.nvim')
     use('nvim-lualine/lualine.nvim')
     use('github/copilot.vim')
+    -- Snippets
+    use("L3MON4D3/LuaSnip")
+
+    -- Completion
+    use("hrsh7th/cmp-nvim-lsp")
+    use("hrsh7th/cmp-buffer")
+    use("hrsh7th/cmp-path")
+    use("saadparwaiz1/cmp_luasnip")
+    use("hrsh7th/nvim-cmp")
     if packer_bootstrap then
         require("packer").sync()
     end
