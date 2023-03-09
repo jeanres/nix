@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
     use('folke/tokyonight.nvim')
     use('nvim-lualine/lualine.nvim')
     use('github/copilot.vim')
+    use("neovim/nvim-lspconfig")
     -- Snippets
     use("L3MON4D3/LuaSnip")
 
