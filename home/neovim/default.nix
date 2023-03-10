@@ -10,6 +10,11 @@
       source = ./lua;
       recursive = true;
     };
+    "nvim/ftplugin" = {
+      source = ./ftplugin;
+      recursive = true;
+    };
+
     "nvim/after" = {
       source = ./after;
       recursive = true;
