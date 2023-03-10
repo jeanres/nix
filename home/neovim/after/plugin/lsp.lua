@@ -74,11 +74,3 @@ config["hls"].setup({
 config["tsserver"].setup({
   on_attach = on_attach,
 })
-
-local home = vim.fn.getenv("HOME")
-local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
-local workspace_dir = '/.local/share/nvim/mason/packages/jdtls/workspace/' .. project_name
-
-config["jdtls"].setup({
-  on_attach = on_attach,
-})

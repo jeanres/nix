@@ -10,7 +10,6 @@ return require('packer').startup(function(use)
     use("nvim-lua/plenary.nvim")
     use("nvim-telescope/telescope.nvim")
     use "williamboman/mason.nvim"
-    use "mfussenegger/nvim-jdtls"
     use {
 	    'nvim-treesitter/nvim-treesitter',
 	    run = function()
@@ -24,7 +23,6 @@ return require('packer').startup(function(use)
     use("neovim/nvim-lspconfig")
     -- Snippets
     use("L3MON4D3/LuaSnip")
-    use{ "mfussenegger/nvim-jdtls", ft = { "java" }}
     -- Completion
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-buffer")
