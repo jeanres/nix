@@ -41,7 +41,7 @@ local on_attach = function(client, bufnr)
   nnoremap('<space>f', function() vim.lsp.buf.format { async = true } end, bufopts, "Format file")
 
   -- Java extensions provided by jdtls
-  nnoremap("<C-o>", jdtls.organize_imports, bufopts, "Organize imports")
+  --  nnoremap("<C-o>", jdtls.organize_imports, bufopts, "Organize imports")
   nnoremap("<space>ev", jdtls.extract_variable, bufopts, "Extract variable")
   nnoremap("<space>ec", jdtls.extract_constant, bufopts, "Extract constant")
   vim.keymap.set('v', "<space>em", [[<ESC><CMD>lua require('jdtls').extract_method(true)<CR>]],
