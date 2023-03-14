@@ -9,6 +9,12 @@
     '';
   };
 
+  fonts.enableFontDir = true;
+  fonts.fonts = with pkgs; [
+    recursive
+      (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+  ];
+
   programs.zsh.enable = true;
 
   services.nix-daemon.enable = true;

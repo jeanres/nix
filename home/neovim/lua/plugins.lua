@@ -10,15 +10,12 @@ return require('packer').startup(function(use)
   use("nvim-lua/plenary.nvim")
   use("nvim-telescope/telescope.nvim")
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use 'nvim-tree/nvim-web-devicons'
   use "williamboman/mason.nvim"
   use 'ThePrimeagen/git-worktree.nvim'
   use 'tpope/vim-fugitive'
   use {
     'nvim-tree/nvim-tree.lua',
-    requires = {
-      'nvim-tree/nvim-web-devicons', -- optional, for file icons
-    },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
   use {
     'nvim-treesitter/nvim-treesitter',
