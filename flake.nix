@@ -45,7 +45,6 @@
                   ./home/shell
                     ./home/neovim
                     ./home/terminal
-                    ./home/docker
                 ];
                 home.stateVersion = "22.11";
               };
